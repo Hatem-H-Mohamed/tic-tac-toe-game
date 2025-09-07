@@ -1,16 +1,64 @@
-# tic_tac_toe_game
+# Tic-Tac-Toe Game
 
-A new Flutter project.
+A classic Tic-Tac-Toe game built with Flutter. This application provides a simple and visually appealing interface for two players to compete.
+
+## Features
+
+*   **Player Selection:** Choose whether to start as 'X' or 'O' from the home screen.
+*   **Game Timer:** A timer tracks the duration of each game.
+*   **Turn Indicator:** Clearly displays whose turn it is ('X' or 'O').
+*   **Win/Draw Detection:** The game automatically detects winning moves and draw conditions.
+*   **End-Game Summary:** A dialog appears at the end of the game, announcing the winner or if it's a draw, and displays the total game time.
+*   **Play Again:** Easily restart a new game after one concludes.
+*   **Custom UI:** A vibrant gradient background and custom SVG icons for a polished user experience.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To get a local copy up and running, follow these simple steps.
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Ensure you have the Flutter SDK installed on your machine. For installation instructions, see the [official Flutter documentation](https://flutter.dev/docs/get-started/install).
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Installation
+
+1.  **Clone the repository:**
+    ```sh
+    git clone https://github.com/hatem-h-mohamed/tic-tac-toe-game.git
+    ```
+2.  **Navigate to the project directory:**
+    ```sh
+    cd tic-tac-toe-game
+    ```
+3.  **Install dependencies:**
+    ```sh
+    flutter pub get
+    ```
+4.  **Run the application:**
+    ```sh
+    flutter run
+    ```
+
+## Project Structure
+
+The core application logic is located in the `lib/` directory.
+
+```
+lib/
+├── core/
+│   ├── app_assets/
+│   │   └── app_assets.dart    # Centralizes asset paths
+│   └── theme/
+│       └── app_colors.dart    # Defines the application's color palette
+├── screens/
+│   ├── home_screen.dart       # The initial screen for player selection
+│   └── play_screen.dart       # The main game board screen and logic
+├── widgets/
+│   └── gradient_scaffold.dart # A reusable scaffold with a gradient background
+└── main.dart                  # The entry point of the application
+```
+
+*   **`main.dart`**: The entry point for the Flutter application.
+*   **`core/`**: Contains shared application code, including asset constants and theme colors.
+*   **`screens/`**: Holds the primary screens of the application, such as the home screen and the game screen.
+*   **`widgets/`**: Contains reusable UI components used across different screens.
